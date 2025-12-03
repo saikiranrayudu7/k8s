@@ -9,7 +9,7 @@ spec:
   - name: nginx-pod
     image: nginx
     ports:
-      - containerPort: 8080
+      - containerPort: 80
 ---
 apiVersion: v1
 kind: Service
@@ -21,4 +21,4 @@ spec:
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 8080
+      targetPort: 80
